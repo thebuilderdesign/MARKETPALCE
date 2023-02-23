@@ -1,0 +1,373 @@
+.connect {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+
+.btn {
+  background-color: var(--tw-color1);
+  outline: none;
+  border: none;
+  color: var(--white);
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 300ms ease-in-out;
+  transform-origin: center;
+}
+
+.btn:hover {
+  background-color: var(--tw-color1-hover);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.address {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.container {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.page {
+  width: inherit;
+  border-radius: 20px;
+  border: 1px solid var(--tw-color1);
+  padding: 16px;
+}
+
+.pageContainer {
+  max-width: 600px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: row;
+  gap: 2%;
+  padding: 1rem;
+}
+
+.arrowButton {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.owner {
+  font-size: 1rem;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  background-color: #262936;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 96px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 5%;
+}
+
+.secondaryButton {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.mainButton {
+  cursor: pointer;
+  display: inline-flex;
+  margin-left: 10px;
+  appearance: none;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  height: 3rem;
+  min-width: 3rem;
+  font-size: 1rem;
+  background: #e5e5ea;
+  background-image: linear-gradient(to left, #cc25b3 0%, #418dff 101.52%);
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  border-radius: 9999px;
+}
+
+.mainButton:hover {
+  opacity: 0.8;
+}
+
+.ourCollection {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.collectionContainer {
+  width: 500px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.nftGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nftItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 16px;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.h1 {
+  margin-bottom: 0px;
+}
+
+.explain {
+  font-size: 1.125rem;
+}
+
+.nameContainer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.name {
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.purple {
+  color: #9f2c9d;
+}
+
+.divider {
+  width: 50%;
+  border-color: grey;
+  opacity: 0.25;
+}
+
+.smallDivider {
+  width: 25%;
+  border-color: grey;
+  margin-top: 64px;
+  opacity: 0.25;
+}
+
+.textInput {
+  width: 75%;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 8px;
+  color: #fff;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+.imageInput {
+  width: 100%;
+  height: 100px;
+  border: 1px dashed grey;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  cursor: pointer;
+}
+
+.listingGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 90vw;
+  gap: 1%;
+}
+
+.listingShortView {
+  border-radius: 20px;
+  border: rgba(255, 255, 255, 0.25) 1px solid;
+  width: 24%;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+/* On Mobile, make listingShortView 49% */
+@media screen and (max-width: 800px) {
+  .listingShortView {
+    width: 49%;
+  }
+}
+
+.listingTypeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.listingType {
+  opacity: 0;
+  width: 0;
+  position: fixed;
+}
+
+.listingTypeLabel {
+  display: inline-block;
+  background-color: #262936;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.listingType:checked + label {
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(to right, #262936, #262936),
+    linear-gradient(to right, #418dff, #cc25b3);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+/* Listing Page */
+
+.loadingOrError {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.listingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  max-width: 90vw;
+  gap: 20px;
+  margin-top: 5%;
+  height: 500px;
+}
+
+.leftListing {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainNftImage {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rightListing {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* On Mobile, change .listingContainer to be stacked vertically */
+@media screen and (max-width: 900px) {
+  .listingContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftListing {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .rightListing {
+    width: 100%;
+    align-items: center;
+  }
+}
